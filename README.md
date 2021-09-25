@@ -1,7 +1,7 @@
 # Ecommerce-website-with-payment-integration
 
 This is an Ecommerce website with login, logout, cart, checkout functionality with Paypal Payment Integration
-implement with Django framework.
+implemented with Django framework.
 
 
 - To test the paypal payment functionality during checkout, you need to have a Paypal Sandbox Personal Account. Visit this link to
