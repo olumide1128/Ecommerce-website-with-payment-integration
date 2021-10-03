@@ -3,6 +3,8 @@
 This is an Ecommerce website with login, logout, cart, checkout functionality with Paypal Payment Integration
 implemented with Django framework.
 
+- To run Application, after cloning this repository and creating a virtual environment, then go into the 'ecommerce' directory
+and type 'python manage.py runserver' to start the django server.
 
 - To test the paypal payment functionality during checkout, you need to have a Paypal Sandbox Personal Account. Visit this link to
 create one >> https://developer.paypal.com/developer/accounts/
