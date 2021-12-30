@@ -1,0 +1,36 @@
+{% extends 'account/sub_main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="logreg-forms">
+    <form action="" class="form-signup" method="POST">
+        {% csrf_token %}
+
+        <div id="error" style="font-weight: bold; text-transform: uppercase;" class="text-danger text-center mb-4">{{error}}</div>
+        <div class="social-login">
+            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
+        </div>
+        <div class="social-login">
+            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
+        </div>
+        
+        <p style="text-align:center">OR</p>
+
+        <input type="text" id="full-name" name="fullname" class="form-control" placeholder="Full name">
+        <input type="email" id="user-email"  name="email" class="form-control" placeholder="Email address">
+        <input type="text" id="user-name"  name="username" class="form-control" placeholder="Username">
+        <input type="password" id="user-pass" name="password" class="form-control" placeholder="Password">
+        
+
+                
+        <a href="{% url 'login' %}" class="small">Already have an account? SIGN IN</a>
+        
+        <div class="d-grid gap-2 mb-4">
+            <button class="btn btn-primary" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+        </div>
+      
+    </form>
+</div>
+
+{% endblock content %}
