@@ -10,3 +10,5 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+ALLOWED_HOSTS = ['ecommmerce-app01.herokuapp.com']
