@@ -1,6 +1,5 @@
 # Ecommerce-website-with-payment-integration
-
-This is an Ecommerce website with login, logout, cart, checkout functionality with Paypal Payment Integration
+This is an Django Ecommerce website with login, logout, cart, checkout functionality with Paypal Payment Integration
 implemented with Django framework.
 
 - To run Application, after cloning this repository and creating a virtual environment, then go into the 'ecommerce' directory
