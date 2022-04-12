@@ -28,9 +28,12 @@ def cart(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
+    disableCheckout = False
 
+    if cartItems == 0:
+        disableCheckout = True
 
-    context = {'items':items, 'order':order, 'cartItems':cartItems}
+    context = {'items':items, 'order':order, 'cartItems':cartItems, 'disableCheckout':disableCheckout}
     return render(request, 'store/cart.html', context)
 
 
