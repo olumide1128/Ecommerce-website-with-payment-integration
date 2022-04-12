@@ -7,6 +7,8 @@ import json
 import datetime
 
 from .utils import cookieCart, cartData, guestOrder
+
+from decouple import config
 # Create your views here.
 
 
@@ -43,9 +45,10 @@ def checkout(request):
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
+    clientId = config('CLIENT_ID')
 
 
-    context = {'items':items, 'order':order, 'cartItems':cartItems}
+    context = {'items':items, 'order':order, 'cartItems':cartItems, 'clientId':clientId}
     return render(request, 'store/checkout.html', context)
 
 
